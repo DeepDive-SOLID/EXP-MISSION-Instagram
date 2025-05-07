@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>instagram</title>
+        <link rel="icon" href="assets/favicon.svg">
+        <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/general.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/sidebar.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/side.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/modal.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-top">
+                <nav class="header__content">
+                    <div class="header__buttons">
+                        <a href="index.html" class="header__home">
+                            <img src="assets/icons/logo.svg" alt="logo" class="header__logo"/>
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <img src="assets/icons/search.svg" alt="search"/>
+                        <input type="text" placeholder="search..."/>
+                    </div>
+                    <div class="header__buttons">
+                        <a href="#" class="sidebar__item">
+                            <img src="assets/icons/heart.svg" alt="알림"/>
+                            <span>알림</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="header-bottom">
+                <nav class="header__bottom__content">
+                    <div class="header__bottom__buttons">
+                        <a href="index.html">
+                            <img src="assets/icons/home.svg" alt=""/>
+                        </a>
+                        <a href="explore.html">
+                            <img src="assets/icons/shop.svg" alt=""/>
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/add.svg" alt=""/>
+                        </a>
+                        <a href="#">
+                            <img src="assets/icons/share.svg" alt=""/>
+                        </a>
+                        <a href="profile.html" class="profile__picture">
+                            <img src="assets/images/avatar.png" alt=""/>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-container">
+            <aside class="sidebar__content">
+                <div class="sidebar__top">
+                    <a href="index.html" class="sidebar__logo-wrapper">
+                        <img src="assets/icons/logo.svg" alt="logo" class="sidebar__logo" id="logo"/>
+                    </a>
+                    <div class="sidebar__buttons">
+                        <a href="index.html" class="sidebar__item">
+                            <img src="assets/icons/home.svg" alt="홈"/>
+                            <span>홈</span>
+                        </a>
+                        <a href="#" class="sidebar__item">
+                            <img src="assets/icons/search.svg" alt="검색"/>
+                            <span>검색</span>
+                        </a>
+                        <a href="explore.html" class="sidebar__item">
+                            <img src="assets/icons/shop.svg" alt="탐색 탭"/>
+                            <span>탐색 탭</span>
+                        </a>
+                        <a href="#" class="sidebar__item">
+                            <img src="assets/icons/share.svg" alt="메시지"/>
+                            <span>메시지</span>
+                        </a>
+                        <a href="#" class="sidebar__item">
+                            <img src="assets/icons/heart.svg" alt="알림"/>
+                            <span>알림</span>
+                        </a>
+                        <a href="#" class="sidebar__item">
+                            <img src="assets/icons/add.svg" alt="만들기"/>
+                            <span>만들기</span>
+                        </a>
+                        <a href="profile.html" class="sidebar__item">
+                            <img src="assets/images/avatar.png" alt="프로필" class="profile__picture"/>
+                            <span>프로필</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="sidebar__bottom">
+                    <a href="#" class="sidebar__item">
+                        <img src="assets/icons/threads.svg" alt="Threads"/>
+                        <span>Threads</span>
+                    </a>
+                    <a href="#" class="sidebar__item">
+                        <img src="assets/icons/menu.svg" alt="더 보기"/>
+                        <span>더 보기</span>
+                    </a>
+                </div>
+            </aside>
+            <div class="search-panel" id="searchPanel">
+                <h2 class="search-panel__title">검색</h2>
+                <div class="search-box">
+                    <input type="text" placeholder="검색"/>
+                </div>
+                <div class="search-history">
+                    <p>최근 검색 항목</p>
+                    <span class="no-history">최근 검색 내역 없음.</span>
+                </div>
+            </div>
+            <section class="content-container">
+                <div class="content">
+                    <div class="stories">
+                        <div class="stories__content">
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+
+                            <button class="story">
+                                <div class="story__avatar">
+                                    <div class="story__border">
+                                        <svg width="64" height="64">
+                                            <circle r="31" cy="32" cx="32"/>
+                                        </svg>
+                                    </div>
+                                    <div class="story__picture">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </div>
+                                </div>
+                                <span class="story__user">user1</span>
+                            </button>
+                        </div>
+                        <div class="stories__modal" id="storiesModal">
+                            <img src="assets/icons/modalLogo.svg" class="modal-logo"/>
+                            <button id="prevStory" class="story-arrow left">&#10094;</button>
+                            <button class="modal-close" id="closeModal">&times;</button>
+                            <button id="nextStory" class="story-arrow right">&#10095;</button>
+                            <div class="story-content">
+                                <div class="progress-bar-container" id="progressBars"></div>
+                                <img id="storyImage" src="" class="story-image" alt="story"/>
+                                <div class="story-info-overlay">
+                                    <img src="assets/images/avatar.png" class="story-user-avatar"/>
+                                    <div class="story-user-meta">
+                                        <span class="story-username"></span>
+                                        <span class="story-time"></span>
+                                    </div>
+                                </div>
+
+                                <div class="story-footer">
+                                    <input type="text" value="user1님에게 답장하기..."/>
+                                    <img src="assets/icons/modalHeart.svg" class="icon"/>
+                                    <img src="assets/icons/modalShare.svg" class="icon"/>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="posts">
+
+                        <article class="post">
+                            <div class="post__header">
+                                <div class="post__profile">
+                                    <a href="#" class="post__avatar">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </a>
+                                    <a href="#" class="post__user">user1</a>
+                                    <span class="post__date-time">30초 전</span>
+                                </div>
+                                <button class="post__more-options">
+                                    <img src="assets/icons/more.svg"/>
+                                </button>
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__medias">
+                                    <img class="post__media" src="assets/images/picture.jpeg" alt="post content"/>
+                                </div>
+                            </div>
+
+                            <div class="post__footer">
+                                <div class="post__buttons">
+                                    <button class="post__button heart-button">
+                                        <img src="assets/icons/heart.svg" alt="heart"/>
+                                    </button>
+                                    <button class="post__button">
+                                        <img src="assets/icons/comment.svg" alt="comment"/>
+                                    </button>
+                                    <button class="post__button post__button--align-right">
+                                        <img src="assets/icons/bookmark.svg" alt="bookmark"/>
+                                    </button>
+                                </div>
+                                <div class="post__infos">
+                                    <div class="post__likes">
+                                        <a href="#" class="post__likes-avatar">
+                                            <img src="assets/images/avatar.png" alt="user picture"/>
+                                        </a>
+                                        <span>좋아요 33개</span>
+                                    </div>
+
+                                    <div class="post__description">
+                            <span>
+                                <a class="post__name--underline" href="#">
+                                    user
+                                </a>
+                                description
+                            </span>
+                                    </div>
+                                    <span class="post__comment">댓글 3개 모두 보기</span>
+                                    <div class="post__comment-box">
+                                        <input class="post__comment_input" placeholder="댓글 달기...">
+                                        <button class="post__comment_btn" style="display: none;">게시</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="post__header">
+                                <div class="post__profile">
+                                    <a href="#" class="post__avatar">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </a>
+                                    <a href="#" class="post__user">user1</a>
+                                    <span class="post__date-time">30초 전</span>
+                                </div>
+                                <button class="post__more-options">
+                                    <img src="assets/icons/more.svg"/>
+                                </button>
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__medias">
+                                    <img class="post__media" src="assets/images/picture.jpeg" alt="post content"/>
+                                </div>
+                            </div>
+
+                            <div class="post__footer">
+                                <div class="post__buttons">
+                                    <button class="post__button heart-button">
+                                        <img src="assets/icons/heart.svg" alt="heart"/>
+                                    </button>
+                                    <button class="post__button">
+                                        <img src="assets/icons/comment.svg" alt="comment"/>
+                                    </button>
+                                    <button class="post__button post__button--align-right">
+                                        <img src="assets/icons/bookmark.svg" alt="bookmark"/>
+                                    </button>
+                                </div>
+                                <div class="post__infos">
+                                    <div class="post__likes">
+                                        <a href="#" class="post__likes-avatar">
+                                            <img src="assets/images/avatar.png" alt="user picture"/>
+                                        </a>
+
+                                        <span>좋아요 33개</span>
+                                    </div>
+
+                                    <div class="post__description">
+                            <span>
+                                <a class="post__name--underline" href="#">
+                                    user
+                                </a>
+                                description
+                            </span>
+                                    </div>
+                                    <span class="post__comment">댓글 3개 모두 보기</span>
+                                    <div class="post__comment-box">
+                                        <input class="post__comment_input" placeholder="댓글 달기...">
+                                        <button class="post__comment_btn" style="display: none;">게시</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="post__header">
+                                <div class="post__profile">
+                                    <a href="#" class="post__avatar">
+                                        <img src="assets/images/avatar.png" alt="user picture"/>
+                                    </a>
+                                    <a href="#" class="post__user">user1</a>
+                                    <span class="post__date-time">30초 전</span>
+                                </div>
+                                <button class="post__more-options">
+                                    <img src="assets/icons/more.svg"/>
+                                </button>
+                            </div>
+
+                            <div class="post__content">
+                                <div class="post__medias">
+                                    <img class="post__media" src="assets/images/picture.jpeg" alt="post content"/>
+                                </div>
+                            </div>
+
+                            <div class="post__footer">
+                                <div class="post__buttons">
+                                    <button class="post__button heart-button">
+                                        <img src="assets/icons/heart.svg" alt="heart"/>
+                                    </button>
+                                    <button class="post__button">
+                                        <img src="assets/icons/comment.svg" alt="comment"/>
+                                    </button>
+                                    <button class="post__button post__button--align-right">
+                                        <img src="assets/icons/bookmark.svg" alt="bookmark"/>
+                                    </button>
+                                </div>
+                                <div class="post__infos">
+                                    <div class="post__likes">
+                                        <a href="#" class="post__likes-avatar">
+                                            <img src="assets/images/avatar.png" alt="user picture"/>
+                                        </a>
+
+                                        <span>좋아요 33개</span>
+                                    </div>
+
+                                    <div class="post__description">
+                            <span>
+                                <a class="post__name--underline" href="#">
+                                    user
+                                </a>
+                                description
+                            </span>
+                                    </div>
+                                    <span class="post__comment">댓글 3개 모두 보기</span>
+                                    <div class="post__comment-box">
+                                        <input class="post__comment_input" placeholder="댓글 달기...">
+                                        <button class="post__comment_btn" style="display: none;">게시</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="side-menu">
+                    <div class="side-menu__user-profile">
+                        <a href="#" class="side-menu__user-avatar">
+                            <img src="assets/images/avatar.png" alt="user picture"/>
+                        </a>
+                        <div class="side-menu__user-info">
+                            <a href="#">user1</a>
+                            <span>nickname</span>
+                        </div>
+                        <button class="side-menu__user-button">
+                            Switch
+                        </button>
+                    </div>
+                    <div class="side-menu__suggestions-section">
+                        <div class="side-menu__suggestions-header">
+                            <h2>회원님을 위한 추천</h2>
+                            <button>모두 보기</button>
+                        </div>
+                        <div class="side-menu__suggestions-content">
+                            <div class="side-menu__suggestion">
+                                <a href="#" class="side-menu__suggestion-avatar">
+                                    <img src="assets/images/avatar.png" alt="user picture"/>
+                                </a>
+                                <div class="side-menu__suggestion-info">
+                                    <a href="#">
+                                        user11
+                                    </a>
+                                    <span>user1님 외 4명이 팔로우 합니다</span>
+                                </div>
+                                <button class="side-menu__suggestion-button">팔로우</button>
+                            </div>
+                            <div class="side-menu__suggestion">
+                                <a href="#" class="side-menu__suggestion-avatar">
+                                    <img src="assets/images/avatar.png" alt="user picture"/>
+                                </a>
+                                <div class="side-menu__suggestion-info">
+                                    <a href="#">
+                                        user11
+                                    </a>
+                                    <span>회원님을 팔로우합니다</span>
+                                </div>
+                                <button class="side-menu__suggestion-button">팔로우</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-menu__footer">
+                        <div class="side-menu__footer-links">
+                            <ul class="side-menu__footer-list">
+                                <li class="side-menu__footer-item">
+                                    <a class="side-menu__footer-link">About</a>
+                                </li>
+                                <li class="side-menu__footer-item">
+                                    <a class="side-menu__footer-link">Help</a>
+                                </li>
+                                <li class="side-menu__footer-item">
+                                    <a class="side-menu__footer-link">Press</a>
+                                </li>
+                                <li class="side-menu__footer-item">
+                                    <a class="side-menu__footer-link">API</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <span class="side-menu__footer-copyright">&copy; 2023 instagram from facebook</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

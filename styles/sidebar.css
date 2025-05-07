@@ -1,0 +1,155 @@
+.sidebar__content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    padding: 20px 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    z-index: 1;
+    transition: width 0.3s;
+}
+
+.sidebar__top {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.sidebar__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.sidebar__logo-wrapper {
+    padding: 10px;
+    margin-top: 16px;
+}
+
+.sidebar__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 16px;
+}
+
+.sidebar__item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar__item:hover {
+    background-color: #f2f2f2;
+}
+
+.sidebar__item img {
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar__item span {
+    display: inline;
+    transition: opacity 0.3s;
+}
+
+.sidebar__content.shrink .sidebar__item span {
+    display: none;
+}
+
+.profile__picture {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.sidebar__content.shrink {
+    width: 72px;
+}
+
+.search-panel__title {
+    padding: 30px;
+}
+
+.search-panel {
+    position: absolute;
+    top: 0;
+    left: 72px;
+    width: 400px;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    display: none;
+    z-index: 1000;
+}
+
+.search-panel.active {
+    display: block;
+    padding: 0px;
+}
+
+.search-box {
+    border-bottom: 1px solid #ccc;
+    padding: 0px 20px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+
+.search-history {
+    margin-top: 24px;
+}
+
+.search-history p {
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 0px 20px;
+}
+
+.no-history {
+    color: gray;
+    font-size: 13px;
+    padding: 0px 20px;
+}
+
+@media screen and (max-width: 1263px) {
+    .sidebar__content {
+        width: 72px;
+    }
+
+    .sidebar__item span {
+        display: none;
+    }
+
+    .sidebar__item {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .sidebar__content {
+        display: none;
+    }
+
+    .search-panel.active {
+        display: none;
+    }
+}

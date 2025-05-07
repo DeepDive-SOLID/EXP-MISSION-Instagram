@@ -1,0 +1,121 @@
+.header {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.header-top {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: none;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.header__content {
+    width: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    margin-top: 5px;
+}
+
+.header__search {
+    width: 216px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__search img {
+    width: 12px;
+    height: 12px;
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+}
+
+.header__search input {
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+    padding: 4px 10px 4px 28px;
+    border: 1px solid #DBDBDB;
+    border-radius: 4px;
+    outline: none;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+
+.header__search input:focus {
+    color: #262626;
+}
+
+.header__buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.profile__picture {
+    width: 24px;
+    height: 24px;
+}
+
+.header-bottom {
+    width: 100%;
+    height: 60px;
+    background-color: #FFFFFF;
+    border-top: 1px solid #DBDBDB;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.header__bottom__content {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__bottom__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+    }
+
+    .header-top,
+    .header-bottom {
+        display: flex;
+    }
+}
