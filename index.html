@@ -4,16 +4,66 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Instagram</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/nav-menu.css" />
+    <link rel="stylesheet" href="styles/feed.css" />
+    <link rel="stylesheet" href="styles/right-panel.css" />
+    <link rel="stylesheet" href="styles/story.css" />
   </head>
+
   <body>
-    <sidebar>
-      <img src="assets/icons/logo_big.svg" alt="Instagram Logo" />
-    </sidebar>
+    <section class="nav-menu">
+      <img src="assets/icons/logo.svg" alt="Instagram Logo" />
+
+      <div class="nav-items">
+        <div class="nav-item">
+          <img src="assets/icons/home.svg" alt="Home" />
+          <span class="item-title">홈</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/search.svg" alt="Search" />
+          <span class="item-title">검색</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/more.svg" alt="Explore" />
+          <span class="item-title">탐색 탭</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/more.svg" alt="Reels" />
+          <span class="item-title">릴스</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/messenger.svg" alt="Messenger" />
+          <span class="item-title">메시지</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/heart.svg" alt="Heart" />
+          <span class="item-title">알림</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/icons/more.svg" alt="Create" />
+          <span class="item-title">만들기</span>
+        </div>
+
+        <div class="nav-item">
+          <img src="assets/images/avatar.png" alt="Profile" />
+          <span class="item-title">프로필</span>
+        </div>
+      </div>
+    </section>
 
     <main>
-      <story></story>
-      <feed></feed>
-      <side_menu></side_menu>
+      <section class="content-area">
+        <section class="story">story</section>
+        <section class="feed">feed</section>
+      </section>
+      <section class="right-panel">right</section>
     </main>
   </body>
 </html>

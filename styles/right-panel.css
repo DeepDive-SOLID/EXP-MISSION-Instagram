@@ -1,0 +1,10 @@
+.right-panel {
+  width: 320px;
+  margin-left: auto;
+  background-color: #111111;
+  border-left: 1px solid #262626;
+  padding: 16px;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
