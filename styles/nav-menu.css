@@ -1,7 +1,7 @@
 .nav-menu {
   width: 250px;
   height: 100vh;
-  padding: 20px;
+  padding: 20px 12px;
   box-sizing: border-box;
   border-right: 1px solid #262626;
   position: fixed;
@@ -9,13 +9,37 @@
   top: 0;
   background-color: #000000;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 로고 */
+.nav-menu > img {
+  width: 120px;
+  margin-bottom: 24px;
+  padding-left: 8px;
+}
+
+/* nav 아이템 공통 */
+.nav-items,
+.nav-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 10px 0;
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: #1a1a1a;
 }
 
 .nav-item img {
@@ -26,4 +50,22 @@
 .item-title {
   font-size: 14px;
   color: white;
+  white-space: nowrap;
+}
+
+.nav-bottom {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 999px;
+  font-weight: bold;
 }
