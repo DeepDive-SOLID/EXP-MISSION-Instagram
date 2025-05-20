@@ -1,7 +1,6 @@
 import { renderStories, renderFeeds, renderRecommendations } from "./render.js";
 
 import {
-  setupLogoClick,
   setupSearchToggle,
   storybtn,
   setUpStoryModal,
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
   renderRecommendations();
 
   storybtn();
-  setupLogoClick();
   setupSearchToggle();
   setUpStoryModal();
   setupSearchFunction();

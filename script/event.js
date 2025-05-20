@@ -51,21 +51,6 @@ export function setUpStoryModal() {
   });
 }
 
-// 홈으로 돌아가기
-export function setupLogoClick() {
-  const miniLogo = document.getElementById("mini-logo");
-  const biglogo = document.getElementById("big-logo");
-  const homelogo = document.getElementById("home");
-
-  [miniLogo, biglogo, homelogo].forEach((el) => {
-    if (el) {
-      el.addEventListener("click", () => {
-        window.location.href = "index.html";
-      });
-    }
-  });
-}
-
 // 검색창 열기
 export function setupSearchToggle() {
   const searchIcon = document.getElementById("search"); // 검색 버튼 id

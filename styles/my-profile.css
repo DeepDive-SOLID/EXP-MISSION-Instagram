@@ -1,0 +1,96 @@
+.my-profile-wrapper {
+  color: white;
+  padding: 40px;
+  max-width: 935px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.my-profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  padding: 20px;
+}
+
+.my-profile-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+.my-profile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+/* 상단 아이디 + 버튼들 */
+.profile-info-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.profile-id {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.edit-profile-button {
+  background-color: #262626;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.settings-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* 중간: 게시물, 팔로워, 팔로우 */
+.profile-info {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.my-profile-content {
+  border-top: 1px solid #333;
+  padding-top: 32px;
+}
+
+.my-profile-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.post-image {
+  width: 293px;
+  height: 293px;
+  object-fit: cover;
+}
