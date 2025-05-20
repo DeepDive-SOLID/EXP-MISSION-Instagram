@@ -2,34 +2,42 @@ export const stories = [
   {
     username: "user1",
     image: "assets/images/profile1.jpg",
+    storyImage: "assets/images/story1.jpg",
   },
   {
     username: "user2",
     image: "assets/images/profile2.jpg",
+    storyImage: "assets/images/story2.jpg",
   },
   {
     username: "user3",
     image: "assets/images/profile3.jpg",
+    storyImage: "assets/images/story3.jpg",
   },
   {
     username: "user4",
     image: "assets/images/profile4.jpg",
+    storyImage: "assets/images/story4.jpg",
   },
   {
-    username: "user1",
+    username: "user5",
     image: "assets/images/profile1.jpg",
+    storyImage: "assets/images/story5.jpg",
   },
   {
-    username: "user2",
+    username: "user6",
     image: "assets/images/profile2.jpg",
+    storyImage: "assets/images/story6.jpg",
   },
   {
-    username: "user3",
+    username: "user7",
     image: "assets/images/profile3.jpg",
+    storyImage: "assets/images/story7.jpg",
   },
   {
-    username: "user4",
+    username: "user8",
     image: "assets/images/profile4.jpg",
+    storyImage: "assets/images/story3.jpg",
   },
 ];
 

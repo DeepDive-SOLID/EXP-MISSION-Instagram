@@ -39,6 +39,7 @@
 .nav-item {
   display: flex;
   align-items: center;
+  gap: 12px;
   padding: 12px;
   cursor: pointer;
   transition: background-color 0.2s;

@@ -1,3 +1,5 @@
+import { stories } from "./data.js";
+
 // 스토리 이동
 export function storybtn() {
   const storyBtns = document.getElementById("story-container");
@@ -15,6 +17,37 @@ export function storybtn() {
       left: 100,
       behavior: "smooth",
     });
+  });
+}
+
+// 스토리 클릭 시 모달창 열기
+export function setUpStoryModal() {
+  const modal = document.getElementById("storyModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalUsername = document.getElementById("modalUsername");
+  const modalProfile = document.getElementById("modalProfile");
+  const closeModal = document.getElementById("closeModal");
+  const replyInput = document.getElementById("storyReplyInput");
+
+  document.addEventListener("click", (e) => {
+    const storyEl = e.target.closest(".story-item");
+    if (storyEl) {
+      const index = storyEl.dataset.index;
+      const story = stories[index];
+      modalImage.src = story.storyImage;
+      modalProfile.src = story.image;
+      modalUsername.textContent = story.username;
+      modal.classList.remove("hidden");
+      modalUsername.textContent = story.username;
+      replyInput.placeholder = `${story.username}님에게 답장하기...`;
+    }
+  });
+
+  closeModal.addEventListener("click", () => {
+    modal.classList.add("hidden");
+  });
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.classList.add("hidden");
   });
 }
 

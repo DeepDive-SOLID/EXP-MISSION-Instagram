@@ -125,6 +125,7 @@
       </section>
     </main>
 
+    <!-- 검색창 -->
     <div class="search-panel hidden" id="searchPanel">
       <div class="search-header">
         <h3>검색</h3>
@@ -136,6 +137,40 @@
           <button class="clear-all">모두 지우기</button>
         </div>
         <ul class="search-list"></ul>
+      </div>
+    </div>
+
+    <!-- 스토리 전체 페이지 -->
+    <div id="storyModal" class="modal hidden">
+      <div class="modal-content">
+        <!-- 상단: 프로필, 유저네임, 더보기, 닫기 -->
+        <div class="story-header">
+          <div class="user-info">
+            <img id="modalProfile" src="" alt="profile" />
+            <span id="modalUsername"></span>
+          </div>
+          <div class="story-header-icons">
+            <img src="assets/icons/more.svg" alt="more" />
+            <span id="closeModal">&times;</span>
+          </div>
+        </div>
+
+        <!-- 중간: 메인 이미지 -->
+        <div class="story-body">
+          <img id="modalImage" src="" alt="Story Image" />
+        </div>
+
+        <!-- 하단: 댓글 입력 + 아이콘 -->
+        <div class="story-footer">
+          <input
+            type="text"
+            placeholder=""
+            class="story-reply-input"
+            id="storyReplyInput"
+          />
+          <img src="assets/icons/heart.svg" alt="heart" />
+          <img src="assets/icons/send.svg" alt="send" />
+        </div>
       </div>
     </div>
   </body>

@@ -5,9 +5,9 @@ export function renderStories() {
   const container = document.getElementById("story-container");
   if (!container) return;
   container.innerHTML = "";
-  stories.forEach(({ username, image }) => {
+  stories.forEach(({ username, image }, index) => {
     container.innerHTML += `
-      <div class="story-item">
+      <div class="story-item" data-index="${index}">
         <img src="${image}" alt="${username}" />
         <span class="user-title">${username}</span>
       </div>

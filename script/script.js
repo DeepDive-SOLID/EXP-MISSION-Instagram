@@ -5,7 +5,12 @@ import {
   renderSearchHistory,
 } from "./render.js";
 
-import { setupLogoClick, setupSearchToggle, storybtn } from "./event.js";
+import {
+  setupLogoClick,
+  setupSearchToggle,
+  storybtn,
+  setUpStoryModal,
+} from "./event.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   renderStories();
@@ -16,4 +21,5 @@ document.addEventListener("DOMContentLoaded", () => {
   storybtn();
   setupLogoClick();
   setupSearchToggle();
+  setUpStoryModal();
 });
