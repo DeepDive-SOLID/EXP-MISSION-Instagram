@@ -10,7 +10,7 @@
 
 .feed-container {
   width: 480px;
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   color: white;
   overflow: hidden;
   padding-bottom: 8px;
@@ -114,6 +114,7 @@
   align-items: center;
   padding-top: 8px;
   margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 .feed-add-comment input {
@@ -140,9 +141,10 @@
 }
 
 .comment-more {
-  display: block;
-  color: #888;
+  color: #a8a8a8;
   font-size: 13px;
   cursor: pointer;
-  margin-top: 4px;
+}
+.comment-more:hover {
+  text-decoration: underline;
 }

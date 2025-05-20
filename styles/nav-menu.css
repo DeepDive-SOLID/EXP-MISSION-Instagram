@@ -13,6 +13,10 @@
   flex-direction: column;
 }
 
+body {
+  padding-left: 250px; /* nav-menu 공간 확보 */
+}
+
 /* 로고 */
 .nav-menu > img {
   width: 120px;
