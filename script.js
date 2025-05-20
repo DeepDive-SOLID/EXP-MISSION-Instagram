@@ -1,12 +1,59 @@
-// function Sidebar() {
-//   const menuToggle = document.getElementById("menuToggle");
-//   const sidebar = document.getElementById("nav-menu");
+// 스토리 이동
+function storybtn() {
+  const storyBtns = document.getElementById("story-container");
+  const storyLeft = document.getElementById("storyLeft");
+  const storyRight = document.getElementById("storyRight");
 
-//   menuToggle.addEventListener("click", () => {
-//     sidebar.classList.toggle("hidden");
-//   });
-// }
+  storyLeft.addEventListener("click", () => {
+    storyBtns.scrollBy({
+      left: -100,
+      behavior: "smooth",
+    });
+  });
+  storyRight.addEventListener("click", () => {
+    storyBtns.scrollBy({
+      left: 100,
+      behavior: "smooth",
+    });
+  });
+}
+
+// 홈으로 돌아가기
+function setupLogoClick() {
+  const miniLogo = document.getElementById("mini-logo");
+  const biglogo = document.getElementById("big-logo");
+  const homelogo = document.getElementById("home");
+
+  [miniLogo, biglogo, homelogo].forEach((el) => {
+    if (el) {
+      el.addEventListener("click", () => {
+        window.location.href = "index.html";
+      });
+    }
+  });
+}
+
+// 검색창 열기
+function setupSearchToggle() {
+  const searchIcon = document.getElementById("search"); // 검색 버튼 id
+  const searchPanel = document.getElementById("searchPanel");
+
+  if (!searchIcon || !searchPanel) return;
+
+  searchIcon.addEventListener("click", () => {
+    searchPanel.classList.toggle("hidden");
+  });
+
+  // Optional: ESC 눌러서 닫기
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      searchPanel.classList.add("hidden");
+    }
+  });
+}
 
 document.addEventListener("DOMContentLoaded", () => {
-  Sidebar();
+  storybtn();
+  setupLogoClick();
+  setupSearchToggle();
 });
