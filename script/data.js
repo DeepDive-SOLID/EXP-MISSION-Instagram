@@ -1,51 +1,51 @@
 export const stories = [
   {
     username: "e__na0",
-    image: "assets/images/profile1.jpg",
-    storyImage: "assets/images/story1.jpg",
+    image: "assets/images/profile/profile1.jpg",
+    storyImage: "assets/images/story/story1.jpg",
   },
   {
     username: "user2",
-    image: "assets/images/profile2.jpg",
-    storyImage: "assets/images/story2.jpg",
+    image: "assets/images/profile/profile2.jpg",
+    storyImage: "assets/images/story/story2.jpg",
   },
   {
     username: "user3",
-    image: "assets/images/profile3.jpg",
-    storyImage: "assets/images/story3.jpg",
+    image: "assets/images/profile/profile3.jpg",
+    storyImage: "assets/images/story/story3.jpg",
   },
   {
     username: "user4",
-    image: "assets/images/profile4.jpg",
-    storyImage: "assets/images/story4.jpg",
+    image: "assets/images/profile/profile4.jpg",
+    storyImage: "assets/images/story/story4.jpg",
   },
   {
     username: "user5",
-    image: "assets/images/profile1.jpg",
-    storyImage: "assets/images/story5.jpg",
+    image: "assets/images/profile/profile1.jpg",
+    storyImage: "assets/images/story/story5.jpg",
   },
   {
     username: "user6",
-    image: "assets/images/profile2.jpg",
-    storyImage: "assets/images/story6.jpg",
+    image: "assets/images/profile/profile2.jpg",
+    storyImage: "assets/images/story/story6.jpg",
   },
   {
     username: "user7",
-    image: "assets/images/profile3.jpg",
-    storyImage: "assets/images/story7.jpg",
+    image: "assets/images/profile/profile3.jpg",
+    storyImage: "assets/images/story/story7.jpg",
   },
   {
     username: "user8",
-    image: "assets/images/profile4.jpg",
-    storyImage: "assets/images/story3.jpg",
+    image: "assets/images/profile/profile4.jpg",
+    storyImage: "assets/images/story/story3.jpg",
   },
 ];
 
 export const feeds = [
   {
     username: "user1",
-    profile: "assets/images/profile1.jpg",
-    image: "assets/images/feed1.jpg",
+    profile: "assets/images/profile/profile1.jpg",
+    image: "assets/images/feed/feed1.jpg",
     caption: "오늘 날씨 너무 좋아요! 🌞",
     likes: 987,
     comments: [
@@ -58,8 +58,8 @@ export const feeds = [
   },
   {
     username: "user2",
-    profile: "assets/images/profile2.jpg",
-    image: "assets/images/feed2.jpg",
+    profile: "assets/images/profile/profile2.jpg",
+    image: "assets/images/feed/feed2.jpg",
     caption: "카페에서 여유로운 시간 ☕️",
     likes: 1423,
     comments: [
@@ -72,8 +72,8 @@ export const feeds = [
   },
   {
     username: "user3",
-    profile: "assets/images/profile3.jpg",
-    image: "assets/images/feed3.jpg",
+    profile: "assets/images/profile/profile3.jpg",
+    image: "assets/images/feed/feed3.jpg",
     caption: "반려견과 산책 중 🐶",
     likes: 2560,
     comments: [
@@ -86,8 +86,8 @@ export const feeds = [
   },
   {
     username: "user4",
-    profile: "assets/images/profile4.jpg",
-    image: "assets/images/feed4.jpg",
+    profile: "assets/images/profile/profile4.jpg",
+    image: "assets/images/feed/feed4.jpg",
     caption: "새로 산 책 📚 읽는 중",
     likes: 634,
     comments: [
@@ -100,8 +100,8 @@ export const feeds = [
   },
   {
     username: "user5",
-    profile: "assets/images/profile1.jpg",
-    image: "assets/images/feed5.jpg",
+    profile: "assets/images/profile/profile1.jpg",
+    image: "assets/images/feed/feed5.jpg",
     caption: "운동 끝! 뿌듯함 💪",
     likes: 1740,
     comments: [
@@ -118,17 +118,17 @@ export const recommendations = [
   {
     id: "user2",
     name: "가영",
-    image: "assets/images/profile2.jpg",
+    image: "assets/images/profile/profile2.jpg",
   },
   {
     id: "user3",
     name: "다영",
-    image: "assets/images/profile3.jpg",
+    image: "assets/images/profile/profile3.jpg",
   },
   {
     id: "user4",
     name: "라영",
-    image: "assets/images/profile4.jpg",
+    image: "assets/images/profile/profile4.jpg",
   },
 ];
 
