@@ -1,4 +1,4 @@
-import { stories, feeds, recommendations } from "./data.js";
+import { stories, feeds, recommendations, grids } from "./data.js";
 
 // 스토리 데이터 렌더링
 export function renderStories() {
@@ -84,5 +84,26 @@ export function renderRecommendations() {
         <button class="follow-button">팔로우</button>
       </div>
     `;
+  });
+}
+
+// 게시물 랜덤 생성
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+// 그리드 데이터 렌더링
+export function renderExploreGrid() {
+  const container = document.getElementById("exploreGrid");
+  const shuffledImages = shuffle([...grids]); // 원본 유지
+
+  shuffledImages.forEach((src) => {
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = "explore post";
+    container.appendChild(img);
   });
 }

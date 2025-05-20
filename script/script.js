@@ -1,4 +1,9 @@
-import { renderStories, renderFeeds, renderRecommendations } from "./render.js";
+import {
+  renderStories,
+  renderFeeds,
+  renderRecommendations,
+  renderExploreGrid,
+} from "./render.js";
 
 import {
   setupSearchToggle,
@@ -11,6 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   renderStories();
   renderFeeds();
   renderRecommendations();
+  renderExploreGrid();
 
   storybtn();
   setupSearchToggle();

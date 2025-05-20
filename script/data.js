@@ -131,3 +131,24 @@ export const recommendations = [
     image: "assets/images/profile4.jpg",
   },
 ];
+
+export const grids = [
+  "assets/images/grid/grid1.jpg",
+  "assets/images/grid/grid2.jpg",
+  "assets/images/grid/grid3.jpg",
+  "assets/images/grid/grid4.jpg",
+  "assets/images/grid/grid5.jpg",
+  "assets/images/grid/grid6.jpg",
+  "assets/images/grid/grid7.jpg",
+  "assets/images/grid/grid8.jpg",
+  "assets/images/grid/grid9.jpg",
+  "assets/images/grid/grid10.jpg",
+  "assets/images/grid/grid11.jpg",
+  "assets/images/grid/grid12.jpg",
+  "assets/images/grid/grid13.jpg",
+  "assets/images/grid/grid14.jpg",
+  "assets/images/grid/grid15.jpg",
+  "assets/images/grid/grid16.jpg",
+  "assets/images/grid/grid17.jpg",
+  "assets/images/grid/grid18.jpg",
+];
