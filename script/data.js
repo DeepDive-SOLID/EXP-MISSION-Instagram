@@ -38,43 +38,71 @@ export const feeds = [
     username: "user1",
     profile: "assets/images/profile1.jpg",
     image: "assets/images/feed1.jpg",
-    caption: "이것은 피드의 캡션입니다.",
-    likes: 1234,
+    caption: "오늘 날씨 너무 좋아요! 🌞",
+    likes: 987,
     comments: [
       {
-        user: "user123",
-        text: "이것은 댓글입니다.",
+        user: "skylover",
+        text: "정말 맑네요!",
       },
     ],
     timestamp: "1시간 전",
   },
   {
-    username: "user1",
+    username: "user2",
     profile: "assets/images/profile2.jpg",
     image: "assets/images/feed2.jpg",
-    caption: "이것은 피드의 캡션입니다.",
-    likes: 1234,
+    caption: "카페에서 여유로운 시간 ☕️",
+    likes: 1423,
     comments: [
       {
-        user: "user123",
-        text: "이것은 댓글입니다.",
+        user: "coffeefan",
+        text: "어디 카페에요?",
       },
     ],
     timestamp: "2시간 전",
   },
   {
-    username: "user1",
+    username: "user3",
     profile: "assets/images/profile3.jpg",
     image: "assets/images/feed3.jpg",
-    caption: "이것은 피드의 캡션입니다.",
-    likes: 1234,
+    caption: "반려견과 산책 중 🐶",
+    likes: 2560,
     comments: [
       {
-        user: "user123",
-        text: "이것은 댓글입니다.",
+        user: "petlover",
+        text: "귀여워요!!",
       },
     ],
     timestamp: "3시간 전",
+  },
+  {
+    username: "user4",
+    profile: "assets/images/profile4.jpg",
+    image: "assets/images/feed4.jpg",
+    caption: "새로 산 책 📚 읽는 중",
+    likes: 634,
+    comments: [
+      {
+        user: "bookworm",
+        text: "무슨 책이에요?",
+      },
+    ],
+    timestamp: "4시간 전",
+  },
+  {
+    username: "user5",
+    profile: "assets/images/profile1.jpg",
+    image: "assets/images/feed5.jpg",
+    caption: "운동 끝! 뿌듯함 💪",
+    likes: 1740,
+    comments: [
+      {
+        user: "fitlife",
+        text: "자극 받고 갑니다!",
+      },
+    ],
+    timestamp: "5시간 전",
   },
 ];
 
