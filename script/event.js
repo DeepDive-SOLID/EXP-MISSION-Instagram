@@ -1,5 +1,5 @@
 // 스토리 이동
-function storybtn() {
+export function storybtn() {
   const storyBtns = document.getElementById("story-container");
   const storyLeft = document.getElementById("storyLeft");
   const storyRight = document.getElementById("storyRight");
@@ -19,7 +19,7 @@ function storybtn() {
 }
 
 // 홈으로 돌아가기
-function setupLogoClick() {
+export function setupLogoClick() {
   const miniLogo = document.getElementById("mini-logo");
   const biglogo = document.getElementById("big-logo");
   const homelogo = document.getElementById("home");
@@ -34,7 +34,7 @@ function setupLogoClick() {
 }
 
 // 검색창 열기
-function setupSearchToggle() {
+export function setupSearchToggle() {
   const searchIcon = document.getElementById("search"); // 검색 버튼 id
   const searchPanel = document.getElementById("searchPanel");
 
@@ -51,9 +51,3 @@ function setupSearchToggle() {
     }
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  storybtn();
-  setupLogoClick();
-  setupSearchToggle();
-});
