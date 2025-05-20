@@ -2,9 +2,11 @@
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: center; /* 중앙 정렬 */
+  align-items: center;
+  justify-content: center;
   overflow: hidden; /* 넘치는 콘텐츠 숨김 */
   padding: 12px 0;
+  margin: 0 auto;
 }
 
 .story {
