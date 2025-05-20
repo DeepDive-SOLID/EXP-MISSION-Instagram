@@ -76,11 +76,38 @@ export function setupSearchToggle() {
   searchIcon.addEventListener("click", () => {
     searchPanel.classList.toggle("hidden");
   });
+}
 
-  // Optional: ESC 눌러서 닫기
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") {
-      searchPanel.classList.add("hidden");
+// 유저 검색하기
+export function setupSearchFunction() {
+  const searchInput = document.querySelector(".search-input");
+  const searchList = document.querySelector(".search-list");
+
+  if (!searchInput || !searchList) return;
+
+  searchInput.addEventListener("input", () => {
+    const keyword = searchInput.value.toLowerCase().trim();
+    searchList.innerHTML = "";
+
+    if (keyword === "") {
+      return;
+    }
+
+    const filteredUsers = stories.filter((story) =>
+      story.username.toLowerCase().includes(keyword)
+    );
+
+    if (filteredUsers.length === 0) {
+      searchList.innerHTML = `<li>검색 결과가 없습니다.</li>`;
+    } else {
+      filteredUsers.forEach(({ username, image }) => {
+        searchList.innerHTML += `
+          <li class="search-user">
+            <img src="${image}" alt="${username}" />
+            <span>${username}</span>
+          </li>
+        `;
+      });
     }
   });
 }

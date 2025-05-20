@@ -1,6 +1,6 @@
 export const stories = [
   {
-    username: "user1",
+    username: "e__na0",
     image: "assets/images/profile1.jpg",
     storyImage: "assets/images/story1.jpg",
   },
@@ -129,14 +129,5 @@ export const recommendations = [
     id: "user4",
     name: "라영",
     image: "assets/images/profile4.jpg",
-  },
-];
-
-export const searchHistory = [
-  {
-    keyword: "두산 유니폼",
-  },
-  {
-    keyword: "ssg 유니폼",
   },
 ];

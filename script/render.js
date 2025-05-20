@@ -1,4 +1,4 @@
-import { stories, feeds, recommendations, searchHistory } from "./data.js";
+import { stories, feeds, recommendations } from "./data.js";
 
 // 스토리 데이터 렌더링
 export function renderStories() {
@@ -83,22 +83,6 @@ export function renderRecommendations() {
         </div>
         <button class="follow-button">팔로우</button>
       </div>
-    `;
-  });
-}
-
-// 검색 기록 렌더링
-export function renderSearchHistory() {
-  const container = document.querySelector(".search-list");
-  if (!container) return;
-  container.innerHTML = "";
-  searchHistory.forEach(({ keyword }) => {
-    container.innerHTML += `
-      <li>
-        <img src="assets/icons/search.svg" />
-        ${keyword}
-        <button class="remove">X</button>
-      </li>
     `;
   });
 }
