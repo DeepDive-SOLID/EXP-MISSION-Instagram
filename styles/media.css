@@ -1,0 +1,116 @@
+/* === 1. screen >= 1264px === */
+@media (min-width: 1264px) {
+    .left_sidebar {
+        display: flex;
+    }
+
+    .left_sidebar_nav a span {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: inline-block;
+        max-width: 140px;
+    }
+
+    .side_menu {
+        display: block;
+    }
+
+    .content_container {
+    }
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+}
+
+/* === 2. 1024px <= screen < 1264px === */
+@media (min-width: 1024px) and (max-width: 1263px) {
+    .left_sidebar {
+        display: flex;
+        width: 72px;
+    }
+
+    .left_sidebar_nav a span {
+        display: none;
+    }
+
+    .side_menu {
+        display: flex;
+        margin-left: 72px;
+    }
+
+    .content_container {
+        margin-left: 72px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+
+    .logo_img {
+
+    }
+}
+
+@media (max-width: 1160px) {
+    .side_menu {
+        display: none;
+    }
+}
+
+/* === 3. 768px <= screen < 1024px === */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .left_sidebar {
+        display: flex;
+        width: 72px;
+    }
+
+    .left_sidebar_nav a span {
+        display: none;
+    }
+
+    .side_menu {
+        display: none;
+    }
+
+    .content_container {
+        margin-left: 72px;
+    }
+
+    .header {
+        display: none;
+    }
+
+    .main_container {
+        margin-top: 0;
+    }
+}
+
+/* === 4. screen < 768px === */
+@media (max-width: 767px) {
+    .left_sidebar {
+        display: none;
+    }
+
+    .side_menu {
+        display: none;
+    }
+
+    .content_container {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 615px) {
+    .content {
+        width: 500px;
+    }
+}
