@@ -95,11 +95,13 @@ function shuffle(array) {
   }
   return array;
 }
+
 // 그리드 데이터 렌더링
 export function renderExploreGrid() {
   const container = document.getElementById("exploreGrid");
-  const shuffledImages = shuffle([...grids]); // 원본 유지
+  if (!container) return; // 방어 코드
 
+  const shuffledImages = shuffle([...grids]);
   shuffledImages.forEach((src) => {
     const img = document.createElement("img");
     img.src = src;
