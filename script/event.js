@@ -96,3 +96,18 @@ export function setupSearchFunction() {
     }
   });
 }
+
+// 좋아요 누르면 채워지기
+export function filledHeartIcon() {
+  document.addEventListener("click", (e) => {
+    const heart = e.target.closest(".heart-icon");
+    if (heart) {
+      const isFilled = heart.classList.toggle("filled");
+      heart.src = isFilled
+        ? "/assets/icons/filled_heart.svg"
+        : "/assets/icons/heart.svg";
+
+      console.log("현재 이미지:", heart.src);
+    }
+  });
+}

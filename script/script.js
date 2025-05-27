@@ -10,6 +10,7 @@ import {
   storybtn,
   setUpStoryModal,
   setupSearchFunction,
+  filledHeartIcon,
 } from "./event.js";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -22,4 +23,5 @@ document.addEventListener("DOMContentLoaded", () => {
   setupSearchToggle();
   setUpStoryModal();
   setupSearchFunction();
+  filledHeartIcon();
 });

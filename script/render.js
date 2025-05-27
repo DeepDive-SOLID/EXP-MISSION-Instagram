@@ -44,7 +44,7 @@ export function renderFeeds() {
         </div>
         <div class="feed-bottom">
           <div class="feed-icons">
-            <img src="assets/icons/heart.svg" alt="Like" />
+            <img src="assets/icons/heart.svg" alt="Like" class="heart-icon"/>
             <img src="assets/icons/comment.svg" alt="Comment" />
             <img src="assets/icons/send.svg" alt="Send" />
             <img src="assets/icons/bookmark.svg" alt="Bookmark" />
@@ -99,7 +99,7 @@ function shuffle(array) {
 // 그리드 데이터 렌더링
 export function renderExploreGrid() {
   const container = document.getElementById("exploreGrid");
-  if (!container) return; // 방어 코드
+  if (!container) return;
 
   const shuffledImages = shuffle([...grids]);
   shuffledImages.forEach((src) => {
