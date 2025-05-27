@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Instagram Clone</title>
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/side.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__content">
+                <div class="header__buttons">
+                    <a href="index.html" class="header__home">
+                        <img
+                            src="assets/icons/logo.svg"
+                            alt="logo"
+                            class="header__logo"
+                        />
+                    </a>
+                </div>
+                <div class="header__search">
+                    <img src="assets/icons/search.svg" alt="search" />
+                    <input type="text" placeholder="search..." />
+                </div>
+                <div class="header__buttons">
+                    <a href="explore.html" class="explore">
+                        <img src="assets/icons/explore.svg" alt="explore" />
+                    </a>
+                    <a href="profile.html" class="profile__picture">
+                        <img src="assets/images/avatar.png" alt="profile" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main-container">
+            <section class="content-container">
+                <div class="content">
+                    <!-- JS에서 렌더링될 스토리 목록 -->
+                    <div class="stories">
+                        <div class="stories__content"></div>
+                    </div>
+
+                    <!-- JS에서 렌더링될 게시물 목록 -->
+                    <div class="posts"></div>
+                </div>
+
+                <div class="side-menu">
+                    <div class="side-menu__user-profile">
+                        <a href="#" class="side-menu__user-avatar">
+                            <img
+                                src="assets/images/avatar.png"
+                                alt="user picture"
+                            />
+                        </a>
+                        <div class="side-menu__user-info">
+                            <a href="#">jiyeon_2</a>
+                            <span>nickname</span>
+                        </div>
+                        <button class="side-menu__user-button">Switch</button>
+                    </div>
+
+                    <div class="side-menu__suggestions-section">
+                        <div class="side-menu__suggestions-header">
+                            <h2>Suggestions for you</h2>
+                            <button>See All</button>
+                        </div>
+
+                        <!-- JS에서 렌더링될 추천 사용자 목록 -->
+                        <div class="side-menu__suggestions-content"></div>
+                    </div>
+
+                    <div class="side-menu__footer">
+                        <ul class="side-menu__footer-list">
+                            <li class="side-menu__footer-item"><a>About</a></li>
+                            <li class="side-menu__footer-item"><a>Help</a></li>
+                            <li class="side-menu__footer-item"><a>Press</a></li>
+                            <li class="side-menu__footer-item"><a>API</a></li>
+                        </ul>
+                        <span class="side-menu__footer-copyright">
+                            &copy; 2025 instagram from facebook
+                        </span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <ul id="search-results" class="search-results"></ul>
+
+        <div id="story-modal" class="story-modal">
+            <div class="story-modal__overlay"></div>
+            <div class="story-modal__content">
+                <div id="story-image-area" class="story-modal__image-area">
+                    <img id="story-image" src="" alt="story image" />
+
+                    <div class="story-overlay">
+                        <div
+                            class="story-modal__progress-bar-container"
+                            id="story-progress-container"
+                        ></div>
+                        <div class="story-overlay__top">
+                            <div class="story-overlay__profile">
+                                <img
+                                    id="story-avatar"
+                                    class="story-modal__avatar"
+                                    src=""
+                                    alt="avatar"
+                                />
+                                <div>
+                                    <span
+                                        id="story-username"
+                                        class="story-modal__username"
+                                    ></span>
+                                    <span
+                                        id="story-timestamp"
+                                        class="story-modal__timestamp"
+                                    ></span>
+                                </div>
+                            </div>
+                            <button id="close-story" class="story-modal__close">
+                                &times;
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="module" src="script/main.js"></script>
+    </body>
+</html>

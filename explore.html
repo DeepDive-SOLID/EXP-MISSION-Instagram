@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Explore</title>
+        <link rel="stylesheet" href="styles/general.css" />
+        <link rel="stylesheet" href="styles/header.css" />
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 0;
+                background-color: #fafafa;
+            }
+            .explore-grid {
+                max-width: 935px;
+                margin: 80px auto 20px;
+                padding: 0 20px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 10px;
+            }
+            .explore-grid img {
+                width: 100%;
+                aspect-ratio: 1 / 1;
+                object-fit: cover;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="header__content">
+                <div class="header__buttons">
+                    <a href="index.html" class="header__home">
+                        <img
+                            src="assets/icons/logo.svg"
+                            alt="logo"
+                            class="header__logo"
+                        />
+                    </a>
+                </div>
+                <div class="header__search">
+                    <img src="assets/icons/search.svg" alt="search" />
+                    <input type="text" placeholder="search..." />
+                </div>
+                <div class="header__buttons">
+                    <a href="explore.html" class="explore">
+                        <img src="assets/icons/explore.svg" alt="explore" />
+                    </a>
+                    <a href="profile.html" class="profile__picture">
+                        <img src="assets/images/avatar.png" alt="profile" />
+                    </a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="explore-grid" id="explore-grid"></div>
+
+        <script>
+            const explorePosts = [
+                "assets/images/story1.jpg",
+                "assets/images/story2.jpg",
+                "assets/images/story3.jpg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+                "assets/images/picture.jpeg",
+            ];
+
+            const shuffled = explorePosts.sort(() => 0.5 - Math.random());
+            const grid = document.getElementById("explore-grid");
+            grid.innerHTML = shuffled
+                .map((src) => `<img src="${src}" alt="suggested" />`)
+                .join("");
+        </script>
+    </body>
+</html>
