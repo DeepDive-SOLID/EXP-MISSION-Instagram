@@ -40,3 +40,4 @@
 - searchBtnEvent : 검색버튼 눌렀을 시 이벤트
 - logoChange : 로고 변경 이벤트
 - heartEvnet : 좋아요 클릭 이벤트
+- firstLogo : 로고 결정
