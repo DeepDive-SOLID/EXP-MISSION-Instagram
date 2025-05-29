@@ -74,6 +74,14 @@ const logoChange = () => {
     }
   });
 };
+
+const firstLogo = () => {
+  if (window.innerWidth < 1263 || state.isOpen) {
+    logoImg.src = "./assets/instagram-svgrepo-com.svg";
+  } else {
+    logoImg.src = "./assets/instagram-031f.svg";
+  }
+};
 const heartEvent = () => {
   heart.addEventListener("click", () => {
     heartClick = !heartClick;
@@ -82,8 +90,10 @@ const heartEvent = () => {
 };
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (locationURL === "/instagram/explore.html") exploreCreateEl();
+  console.log(locationURL);
+  if (locationURL === "/Instagram/EXP-MISSION-Instagram/explore.html") exploreCreateEl();
   searchBtnEvent();
-  heartEvent();
+  if (locationURL === "/Instagram/EXP-MISSION-Instagram/index.html") heartEvent();
   logoChange();
+  firstLogo();
 });
