@@ -1,0 +1,143 @@
+/* side */
+.sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid rgba(128, 128, 128, 0.389);
+    padding-left: 20px;
+    width: 200px;
+    z-index: 4;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.logo_small {
+    display: none;
+}
+.menu {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    padding: 15px 10px;
+    width: 100%;
+}
+.menu.media {
+    width: 25px;
+}
+.menu_name.visibility {
+    display: none;
+}
+.menu:hover {
+    background-color: gray;
+    border-radius: 12px;
+}
+.menu:hover .menu_name,
+.menu:hover .menu_img {
+    background-color: gray;
+}
+.menu_container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_name {
+    margin-left: 10px;
+    text-align: center;
+}
+.menu_name.selected {
+    border: 1px solid white;
+}
+
+.pre {
+    width: 25px;
+    height: 25px;
+}
+
+.nav_a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 90%;
+}
+.search {
+    position: absolute;
+    width: 400px;
+    left: -400px;
+    height: 100vh;
+    border-right: 1px solid gray;
+
+    color: white;
+    visibility: hidden;
+    overflow: hidden;
+    transition:
+        left 0.3s ease-in-out,
+        right 0.3s ease-in-out;
+}
+.search.activeLeft {
+    visibility: visible;
+    left: 73px; /* 오른쪽으로 슬라이드 */
+}
+.search.activeRight {
+    visibility: visible;
+    left: -400px; /* 오른쪽으로 슬라이드 */
+    /* z-index: -1; */
+}
+
+.search_title {
+    padding: 30px 20px;
+}
+.search_input {
+    border: none;
+    border-radius: 8px;
+    background-color: gray;
+    display: flex;
+    width: 80%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.search_etc {
+    display: flex;
+    flex-direction: column;
+}
+.search_etc > :nth-child(1) {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+    border-top: 1px solid gray;
+}
+
+@media (max-width: 1263px) {
+    .sidebar {
+        width: 72px;
+    }
+    .menu {
+        width: 25px;
+    }
+    .menu span {
+        display: none;
+    }
+    /* .logo_big {
+        display: none;
+    }
+    .logo_small {
+        display: block;
+    } */
+}
+
+@media (max-width: 770px) {
+    .sidebar {
+        display: none;
+    }
+}

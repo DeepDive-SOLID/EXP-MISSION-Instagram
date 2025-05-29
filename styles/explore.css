@@ -1,0 +1,19 @@
+.explore_grid_container {
+    width: 900px;
+    margin-top: 50px;
+}
+.explore_main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+.img_box {
+    max-width: 300px;
+    max-height: 350px;
+}
+.explore_img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
