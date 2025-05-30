@@ -1,0 +1,29 @@
+.explore {
+  padding: 20px;
+}
+
+.explore-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.explore-content img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .explore-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .explore-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,0 +1,169 @@
+.nav-menu {
+  width: auto;
+  height: 100vh;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  border-right: 1px solid #262626;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000000;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 로고 */
+.nav-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.instagram-logo {
+  width: 120px;
+  transition: width 0.3s ease;
+  cursor: pointer;
+}
+
+/* nav 아이템 공통 */
+.nav-items,
+.nav-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover,
+.nav-logo:hover {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+}
+
+.nav-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.item-title {
+  font-size: 14px;
+  color: white;
+  white-space: nowrap;
+}
+
+.nav-bottom {
+  margin-top: auto;
+  padding-top: 20px;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  padding: 2px 5px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+/* 검색창 */
+.search-panel {
+  position: fixed;
+  top: 0;
+  width: 400px;
+  height: 100vh;
+  background-color: #000;
+  border-right: 1px solid #262626;
+  color: white;
+  z-index: 20;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.search-header {
+  border-bottom: 1px solid #262626;
+}
+
+.search-panel h3 {
+  font-size: 28px;
+}
+
+.hidden {
+  display: none;
+}
+
+.search-input {
+  width: 95%;
+  height: 30px;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  background-color: #3a3a3a;
+  color: white;
+  border-radius: 6px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.search-list {
+  list-style: none;
+  padding: 0;
+  color: white;
+  cursor: pointer;
+}
+
+.search-list li {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  gap: 10px;
+  border-bottom: 1px solid #262626;
+}
+
+.search-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.search-history-header p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.remove {
+  background: none;
+  color: gray;
+  border: none;
+  cursor: pointer;
+}
+
+.clear-all {
+  background: none;
+  color: #0095f6;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.search-user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}

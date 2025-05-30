@@ -1,0 +1,11 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+  <rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="white" stroke-width="1.8"/>
+  
+  <!-- 릴스 상단 3칸 -->
+  <rect x="6" y="4.5" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="10.5" y="4.5" width="3" height="3" rx="0.5" fill="white"/>
+  <rect x="15" y="4.5" width="3" height="3" rx="0.5" fill="white"/>
+
+  <!-- 재생 아이콘 (삼각형) -->
+  <path d="M10 10L16 13L10 16V10Z" fill="white"/>
+</svg>

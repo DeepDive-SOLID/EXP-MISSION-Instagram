@@ -1,0 +1,150 @@
+.feed {
+  width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feed-container {
+  width: 480px;
+  margin-bottom: 40px;
+  color: white;
+  overflow: hidden;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #262626;
+}
+
+.feed-header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 12px 0;
+  gap: 8px;
+  position: relative;
+}
+
+.feed-header img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.dot {
+  margin: 0 6px;
+  color: #888;
+  font-size: 14px;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #888;
+}
+
+.more-icon {
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.feed-image img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* 정사각형 */
+  object-fit: cover;
+}
+
+.feed-bottom {
+  padding: 12px;
+}
+
+.feed-icons {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.feed-icons img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.feed-icons img:nth-child(4) {
+  margin-left: auto; /* 북마크만 오른쪽 */
+  margin-right: 0;
+}
+
+.feed-likes {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.feed-caption {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.caption-user {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.feed-comments {
+  font-size: 14px;
+}
+
+.comment-user {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.feed-add-comment {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+}
+
+.feed-add-comment input {
+  flex: 1;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.feed-add-comment input::placeholder {
+  color: #888;
+}
+
+.send-comment {
+  background: none;
+  border: none;
+  color: #0095f6;
+  font-weight: 600;
+  cursor: pointer;
+  padding-left: 12px;
+}
+
+.comment-more {
+  color: #a8a8a8;
+  font-size: 13px;
+  cursor: pointer;
+}
+.comment-more:hover {
+  text-decoration: underline;
+}

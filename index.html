@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/nav-menu.css" />
+    <link rel="stylesheet" href="styles/feed.css" />
+    <link rel="stylesheet" href="styles/right-panel.css" />
+    <link rel="stylesheet" href="styles/story.css" />
+  </head>
+
+  <body>
+    <section class="nav-menu" id="nav-menu">
+      <header class="nav-logo">
+        <img
+          src="assets/icons/mini_logo.svg"
+          class="mini-logo"
+          id="mini-logo"
+        />
+        <img
+          src="assets/icons/logo.svg"
+          alt="Instagram Logo"
+          class="instagram-logo"
+          id="big-logo"
+        />
+      </header>
+
+      <div class="nav-items">
+        <a href="index.html" class="nav-item">
+          <img src="assets/icons/home.svg" alt="Home" id="home" />
+          <span class="item-title">홈</span>
+        </a>
+        <div class="nav-item" id="search">
+          <img src="assets/icons/search.svg" alt="Search" />
+          <span class="item-title">검색</span>
+        </div>
+        <a href="explore.html" class="nav-item">
+          <img src="assets/icons/explore.svg" alt="Explore" />
+          <span class="item-title">탐색 탭</span>
+        </a>
+        <div class="nav-item">
+          <img src="assets/icons/reels.svg" alt="Reels" />
+          <span class="item-title">릴스</span>
+        </div>
+        <div class="nav-item">
+          <div style="position: relative">
+            <img src="assets/icons/send.svg" alt="Messenger" />
+            <span class="badge">9+</span>
+          </div>
+          <span class="item-title">메시지</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/heart.svg" alt="Heart" />
+          <span class="item-title">알림</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/add.svg" alt="Create" />
+          <span class="item-title">만들기</span>
+        </div>
+        <a href="my_profile.html" class="nav-item">
+          <img src="assets/icons/user.svg" alt="Profile" />
+          <span class="item-title">프로필</span>
+        </a>
+      </div>
+
+      <div class="nav-bottom">
+        <div class="nav-item">
+          <img src="assets/icons/threads.svg" alt="Threads" />
+          <span class="item-title">Threads</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/hamburger_menu.svg" alt="Settings" />
+          <span class="item-title">더보기</span>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="content-area">
+        <section class="story-wrapper">
+          <button
+            class="story-arrow left"
+            aria-label="Prev Story"
+            id="storyLeft"
+          >
+            &lt;
+          </button>
+          <section class="story" id="story-container"></section>
+          <button class="story-arrow right" id="storyRight">&gt;</button>
+        </section>
+
+        <section class="feed"></section>
+      </section>
+
+      <section class="right-panel">
+        <a href="my_profile.html" class="my-profile">
+          <img src="assets/images/profile/profile1.jpg" alt="My Profile" />
+          <div>
+            <span class="my-profile-id">user1</span>
+            <span class="my-profile-name">나영</span>
+          </div>
+          <span class="my-profile-edit">전환</span>
+        </a>
+
+        <div class="profile-recommend">
+          <div class="recommend-title">
+            <span>회원님을 위한 추천</span>
+            <span class="see-all">모두 보기</span>
+          </div>
+          <div class="recommend-list"></div>
+
+          <div class="right-panel-bottom">
+            <span>소개</span>
+            <span>도움말</span>
+            <span>홍보 센터</span>
+            <span>채용 정보</span>
+            <span>개인정보처리방침</span>
+            <span>약관</span>
+            <span>위치</span>
+            <span>언어</span>
+          </div>
+          <div>© 2025 Instagram</div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 검색창 -->
+    <div class="search-panel hidden" id="searchPanel">
+      <div class="search-header">
+        <h3>검색</h3>
+        <input type="text" placeholder="검색" class="search-input" />
+      </div>
+      <div class="search-history">
+        <div class="search-history-header">
+          <p>최근 검색 항목</p>
+          <button class="clear-all">모두 지우기</button>
+        </div>
+        <ul class="search-list"></ul>
+      </div>
+    </div>
+
+    <!-- 스토리 전체 페이지 -->
+    <div id="storyModal" class="modal hidden">
+      <div class="modal-content">
+        <!-- 상단: 프로필, 유저네임, 더보기, 닫기 -->
+        <div class="story-header">
+          <div class="user-info">
+            <img id="modalProfile" src="" alt="profile" />
+            <span id="modalUsername"></span>
+          </div>
+          <div class="story-header-icons">
+            <img src="assets/icons/more.svg" alt="more" />
+            <span id="closeModal">&times;</span>
+          </div>
+        </div>
+
+        <!-- 중간: 메인 이미지 -->
+        <div class="story-body">
+          <img id="modalImage" src="" alt="Story Image" />
+        </div>
+
+        <!-- 하단: 댓글 입력 + 아이콘 -->
+        <div class="story-footer">
+          <input
+            type="text"
+            placeholder=""
+            class="story-reply-input"
+            id="storyReplyInput"
+          />
+          <img src="assets/icons/heart.svg" alt="heart" class="heart-icon" />
+          <img src="assets/icons/send.svg" alt="send" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="module" src="script/script.js"></script>
+</html>

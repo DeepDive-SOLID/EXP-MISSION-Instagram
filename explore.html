@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explore</title>
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/nav-menu.css" />
+    <link rel="stylesheet" href="styles/explore.css" />
+  </head>
+  <body>
+    <section class="nav-menu" id="nav-menu">
+      <header class="nav-logo">
+        <img
+          src="assets/icons/mini_logo.svg"
+          class="mini-logo"
+          id="mini-logo"
+        />
+        <img
+          src="assets/icons/logo.svg"
+          alt="Instagram Logo"
+          class="instagram-logo"
+          id="big-logo"
+        />
+      </header>
+
+      <div class="nav-items">
+        <a href="index.html" class="nav-item">
+          <img src="assets/icons/home.svg" alt="Home" id="home" />
+          <span class="item-title">홈</span>
+        </a>
+        <div class="nav-item" id="search">
+          <img src="assets/icons/search.svg" alt="Search" />
+          <span class="item-title">검색</span>
+        </div>
+        <a href="explore.html" class="nav-item">
+          <img src="assets/icons/explore.svg" alt="Explore" />
+          <span class="item-title">탐색 탭</span>
+        </a>
+        <div class="nav-item">
+          <img src="assets/icons/reels.svg" alt="Reels" />
+          <span class="item-title">릴스</span>
+        </div>
+        <div class="nav-item">
+          <div style="position: relative">
+            <img src="assets/icons/send.svg" alt="Messenger" />
+            <span class="badge">9+</span>
+          </div>
+          <span class="item-title">메시지</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/heart.svg" alt="Heart" />
+          <span class="item-title">알림</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/add.svg" alt="Create" />
+          <span class="item-title">만들기</span>
+        </div>
+        <a href="my_profile.html" class="nav-item">
+          <img src="assets/icons/user.svg" alt="Profile" />
+          <span class="item-title">프로필</span>
+        </a>
+      </div>
+
+      <div class="nav-bottom">
+        <div class="nav-item">
+          <img src="assets/icons/threads.svg" alt="Threads" />
+          <span class="item-title">Threads</span>
+        </div>
+        <div class="nav-item">
+          <img src="assets/icons/hamburger_menu.svg" alt="Settings" />
+          <span class="item-title">더보기</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content" id="exploreGrid"></div>
+    </section>
+  </body>
+  <script type="module" src="script/script.js"></script>
+</html>

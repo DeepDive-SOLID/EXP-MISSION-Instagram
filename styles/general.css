@@ -1,0 +1,108 @@
+body {
+  background-color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 40px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+
+.content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+  gap: 20px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* === 반응형 === */
+
+/* 1단계: 데스크탑 (≥1200px) */
+@media (min-width: 1200px) {
+  .nav-menu {
+    width: 250px;
+  }
+
+  .nav-item .item-title {
+    display: block;
+  }
+
+  body {
+    padding-left: 180px;
+  }
+
+  .mini-logo {
+    display: none;
+    width: 40px;
+    height: auto;
+  }
+}
+
+/* 2단계: 중간 화면 (≤1199px) */
+@media (max-width: 1199px) {
+  .instagram-logo {
+    display: none;
+  }
+
+  .mini-logo {
+    display: block;
+    width: 25px;
+  }
+  .nav-menu {
+    width: 80px;
+  }
+
+  .nav-item .item-title {
+    display: none;
+  }
+
+  body {
+    padding-left: 80px;
+  }
+}
+
+/* 3단계: 태블릿 이하 (≤899px) */
+@media (max-width: 899px) {
+  .instagram-logo {
+    display: none;
+  }
+
+  .mini-logo {
+    width: 25px;
+  }
+
+  .nav-menu {
+    position: relative;
+  }
+
+  .right-panel {
+    display: none;
+  }
+
+  .content-area {
+    margin: 0 auto;
+    align-items: center;
+  }
+
+  .feed-container {
+    width: 100%;
+    max-width: 480px;
+    padding: 0 16px;
+  }
+}
